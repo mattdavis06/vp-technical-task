@@ -41,7 +41,7 @@ export function ProductsContent() {
 
   return (
     <div className='flex h-full flex-1 flex-col overflow-hidden'>
-      <section className='mb-4 shrink-0'>
+      <section className='mb-4 flex shrink-0 justify-end'>
         <ThemeToggleWrapper />
       </section>
 
