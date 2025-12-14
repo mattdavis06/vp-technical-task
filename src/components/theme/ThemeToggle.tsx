@@ -15,7 +15,7 @@ export function ThemeToggle({ onClick }: ThemeToggleProps) {
   return (
     <div
       onClick={onClick}
-      className='border-accent bg-accent/10 text-accent hover:bg-accent/20 dark:border-accent dark:bg-accent/20 dark:text-accent dark:hover:bg-accent/30 flex w-fit cursor-pointer items-center gap-1 justify-self-end rounded-md border-2 p-2 shadow-lg'
+      className='border-accent bg-accent/10 text-accent hover:bg-accent/20 dark:border-accent dark:bg-accent/20 dark:text-accent dark:hover:bg-accent/30 flex w-fit cursor-pointer items-center gap-1 rounded-md border-2 p-2 shadow-lg'
       aria-label='Toggle theme'
       suppressHydrationWarning
     >

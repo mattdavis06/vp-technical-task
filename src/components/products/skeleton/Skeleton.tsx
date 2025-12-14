@@ -6,7 +6,7 @@ export function ProductsSkeleton() {
       {Array.from({ length: PRODUCTS_PER_PAGE }).map((_, index) => (
         <div
           key={index}
-          className='h-[480px] w-full animate-pulse rounded-sm bg-zinc-200 dark:bg-zinc-800'
+          className='h-[440px] w-full animate-pulse rounded-sm bg-zinc-200 dark:bg-zinc-800'
         />
       ))}
     </div>
