@@ -40,8 +40,8 @@ export function ProductsContent() {
   }
 
   return (
-    <div className='flex h-full flex-1 flex-col overflow-hidden'>
-      <section className='mb-4 flex shrink-0 justify-end'>
+    <div className='flex h-full min-h-0 flex-1 flex-col overflow-hidden'>
+      <section className='mb-2 flex shrink-0 justify-end md:mb-4'>
         <ThemeToggleWrapper />
       </section>
 
@@ -51,7 +51,7 @@ export function ProductsContent() {
         onValueChange={handleTabChange}
         className='flex min-h-0 flex-1 flex-col overflow-hidden'
       >
-        <section className='mb-4 shrink-0'>
+        <section className='mb-2 shrink-0 md:mb-4'>
           <ProductTabs disabled={isPending} />
         </section>
 
