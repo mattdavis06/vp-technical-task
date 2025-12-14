@@ -49,7 +49,7 @@ export function ProductsContent() {
       <Tabs
         value={searchQuery}
         onValueChange={handleTabChange}
-        className='flex min-h-0 flex-1 flex-col'
+        className='flex min-h-0 flex-1 flex-col overflow-hidden'
       >
         <section className='mb-4 shrink-0'>
           <ProductTabs disabled={isPending} />
@@ -81,13 +81,15 @@ export function ProductsContent() {
       </Tabs>
 
       {/* //? PAGINATION */}
-      <PaginationControls
-        pageNumber={pageNumber}
-        totalPages={totalPages}
-        totalItems={totalItems}
-        isPending={isPending}
-        onPageChange={handlePageChange}
-      />
+      <section className='shrink-0'>
+        <PaginationControls
+          pageNumber={pageNumber}
+          totalPages={totalPages}
+          totalItems={totalItems}
+          isPending={isPending}
+          onPageChange={handlePageChange}
+        />
+      </section>
     </div>
   )
 }
